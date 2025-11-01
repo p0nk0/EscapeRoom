@@ -1,2 +1,0 @@
-C:\Users\frose\Documents\CMU\F25\05499\IXR_Selection_Homework-Win\IXR_Selection_Homework\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
-C:\Users\frose\Documents\CMU\F25\05499\IXR_Selection_Homework-Win\IXR_Selection_Homework\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

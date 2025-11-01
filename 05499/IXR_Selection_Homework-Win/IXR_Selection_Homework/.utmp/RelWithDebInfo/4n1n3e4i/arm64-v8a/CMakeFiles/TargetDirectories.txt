@@ -1,5 +1,0 @@
-C:/Users/frose/Documents/CMU/F25/05499/IXR_Selection_Homework-Win/IXR_Selection_Homework/.utmp/RelWithDebInfo/4n1n3e4i/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/Users/frose/Documents/CMU/F25/05499/IXR_Selection_Homework-Win/IXR_Selection_Homework/.utmp/RelWithDebInfo/4n1n3e4i/arm64-v8a/CMakeFiles/rebuild_cache.dir
-C:/Users/frose/Documents/CMU/F25/05499/IXR_Selection_Homework-Win/IXR_Selection_Homework/.utmp/RelWithDebInfo/4n1n3e4i/arm64-v8a/GameActivity/CMakeFiles/game.dir
-C:/Users/frose/Documents/CMU/F25/05499/IXR_Selection_Homework-Win/IXR_Selection_Homework/.utmp/RelWithDebInfo/4n1n3e4i/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
-C:/Users/frose/Documents/CMU/F25/05499/IXR_Selection_Homework-Win/IXR_Selection_Homework/.utmp/RelWithDebInfo/4n1n3e4i/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
