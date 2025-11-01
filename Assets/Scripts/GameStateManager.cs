@@ -48,7 +48,8 @@ public class GameStateManager : MonoBehaviour
     {
         " f3 dc 28 36", // Moon Tarot Card
         " f1 a6 f6 7b", // Amber
-        " c3 4f 4a dd", // Snake
+        " c3 4f 4a dd", // Thymos 1
+        // " ed 6d ac b9", // Thymos 2
         " 83 a8 53 dd", // Hairbrush
         " 9d 0d 72 b9", // Honey
 
@@ -60,13 +61,12 @@ public class GameStateManager : MonoBehaviour
       {
         {" f3 dc 28 36", "Moon Tarot Card"},
         {" f1 a6 f6 7b", "Amber"},
-        {" c3 4f 4a dd", "Snake"},
+        {" c3 4f 4a dd", "Thymos 1"},
+        // {" ed 6d ac b9", "Thymos 2"},
         {" 83 a8 53 dd", "Hairbrush"},
         {" 9d 0d 72 b9", "Honey"},
         {"13 af 7a 36", "Random card"},
         {"33 f0 0a 36", "Another random card"},
-
-        // { " f3 2a 46 36", "Velociraptor Saliva" },
     };
 
 
@@ -108,6 +108,7 @@ public class GameStateManager : MonoBehaviour
                 startTime = Time.time;
                 itemsScanned = new HashSet<string>();
                 state = GameState.playing;
+                AudioManager.Instance.Play("Intro");
                 Debug.Log("Starting game");
                 break;
             case GameState.playing:
@@ -117,16 +118,24 @@ public class GameStateManager : MonoBehaviour
                 }
                 break;
             case GameState.itemScanned:
-                if (itemsScanned.Add(scannedItem)) // new item
+                if (scannedItem != null)
                 {
-                    // user feedback?
-                    Debug.Log("New item scanned: " + itemDescriptions[scannedItem]);
-                    state = GameState.playing;
-                }
-                else
-                {
-                    Debug.Log("Item already scanned: " + itemDescriptions[scannedItem]);
-                    state = GameState.playing;
+                    if (itemsScanned.Add(scannedItem)) // new item
+                    {
+                        AudioManager.Instance.Play("Potion Success");
+                        if (itemsScanned.Count == 1)
+                        {
+                            AudioManager.Instance.Play("Potion Start");
+                            break;
+                        }
+                        Debug.Log("New item scanned: " + itemDescriptions[scannedItem]);
+                        state = GameState.playing;
+                    }
+                    else
+                    {
+                        Debug.Log("Item already scanned: " + itemDescriptions[scannedItem]);
+                        state = GameState.playing;
+                    }
                 }
                 break;
             case GameState.winGame:
@@ -148,7 +157,7 @@ public class GameStateManager : MonoBehaviour
     private IEnumerator WinGameSequence()
     {
         Debug.Log("starting win game sequence");
-        //TODO: play right audio
+        AudioManager.Instance.Play("Good Ending");
         yield return new WaitForSeconds(5f);
         startTime = 0;
         state = GameState.wait;
@@ -158,7 +167,7 @@ public class GameStateManager : MonoBehaviour
     private IEnumerator LoseGameSequence()
     {
         Debug.Log("starting lose game sequence");
-        //TODO: play right audio
+        AudioManager.Instance.Play("Bad Ending");
         yield return new WaitForSeconds(5f);
         startTime = 0;
         state = GameState.wait;
