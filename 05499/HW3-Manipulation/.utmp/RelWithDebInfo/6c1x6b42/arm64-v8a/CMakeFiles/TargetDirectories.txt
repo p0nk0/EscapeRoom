@@ -1,0 +1,5 @@
+C:/Users/frose/Documents/CMU (not synced)/05499/HW3-Manipulation/.utmp/RelWithDebInfo/6c1x6b42/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/frose/Documents/CMU (not synced)/05499/HW3-Manipulation/.utmp/RelWithDebInfo/6c1x6b42/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/frose/Documents/CMU (not synced)/05499/HW3-Manipulation/.utmp/RelWithDebInfo/6c1x6b42/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/frose/Documents/CMU (not synced)/05499/HW3-Manipulation/.utmp/RelWithDebInfo/6c1x6b42/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/frose/Documents/CMU (not synced)/05499/HW3-Manipulation/.utmp/RelWithDebInfo/6c1x6b42/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
