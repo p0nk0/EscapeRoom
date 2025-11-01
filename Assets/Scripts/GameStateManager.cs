@@ -46,12 +46,12 @@ public class GameStateManager : MonoBehaviour
 
     private HashSet<string> validProps = new HashSet<string>
     {
-        " f3 dc 28 36", // Moon Tarot Card
-        " f1 a6 f6 7b", // Amber
-        " c3 4f 4a dd", // Thymos 1
-        // " ed 6d ac b9", // Thymos 2
-        " 83 a8 53 dd", // Hairbrush
-        " 9d 0d 72 b9", // Honey
+        "f3 dc 28 36", // Moon Tarot Card
+        "f1 a6 f6 7b", // Amber
+        "c3 4f 4a dd", // Thymos 1
+        // "ed 6d ac b9", // Thymos 2
+        "83 a8 53 dd", // Hairbrush
+        "9d 0d 72 b9", // Honey
 
         // "13 af 7a 36", // Random card
         // "33 f0 0a 36", // Another random card
@@ -59,12 +59,12 @@ public class GameStateManager : MonoBehaviour
 
       private Dictionary<string, string> itemDescriptions = new Dictionary<string, string>
       {
-        {" f3 dc 28 36", "Moon Tarot Card"},
-        {" f1 a6 f6 7b", "Amber"},
-        {" c3 4f 4a dd", "Thymos 1"},
+        {"f3 dc 28 36", "Moon Tarot Card"},
+        {"f1 a6 f6 7b", "Amber"},
+        {"c3 4f 4a dd", "Thymos 1"},
         // {" ed 6d ac b9", "Thymos 2"},
-        {" 83 a8 53 dd", "Hairbrush"},
-        {" 9d 0d 72 b9", "Honey"},
+        {"83 a8 53 dd", "Hairbrush"},
+        {"9d 0d 72 b9", "Honey"},
         {"13 af 7a 36", "Random card"},
         {"33 f0 0a 36", "Another random card"},
     };
@@ -175,6 +175,7 @@ public class GameStateManager : MonoBehaviour
     }
 
     public void HandleScannedItem(string item) {
+        item = item.Trim();
         if (state == GameState.playing)
         {
             if (!validProps.Contains(item))
