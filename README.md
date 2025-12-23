@@ -11,7 +11,7 @@ This project contains the Unity experience behind our escape room, integrating i
 - 5 RFID-powered interactive props
 
 ## System Design
-Much of this system is inspired by a previous TPEG project, ![Our 2025 Spring Carnival Booth Game](https://github.com/p0nk0/DinoGame). The RFID-scanning arduino code is the same as [the Arduino code from that project])(https://github.com/p0nk0/DinoArduinos). 
+Much of this system is inspired by a previous TPEG project, [Our 2025 Spring Carnival Booth Game](https://github.com/p0nk0/DinoGame). The RFID-scanning arduino code is the same as [the Arduino code from that project])(https://github.com/p0nk0/DinoArduinos). 
 
 In order for guests to complete the room, they need to scan 5 objects using the cauldron to create a Hex Reversal Potion. 4 of these objects are hidden around the room, and must be discovered via the recipe cards. The final object is trapped inside of box, with the combination for it coming from the projection puzzle (which in turn has a few objects hidden around the room. 
 ![Puzzle Diagram](Images/Puzzles.png)
