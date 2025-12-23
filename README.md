@@ -30,9 +30,9 @@ These are the 5 RFID-enabled props (Only the moon tarot card contains an RFID ta
 - Press play!
 
 ## Media
-![1](Images/1.jpg)
-![2](Images/2.jpg)
-![3](Images/3.jpg)
+![1](Images/1.png)
+![2](Images/2.png)
+![3](Images/3.png)
 ![4](Images/4.png)
 
 ## Credits
