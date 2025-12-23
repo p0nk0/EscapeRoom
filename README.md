@@ -39,6 +39,7 @@ These are the 5 RFID-enabled props (Only the moon tarot card contains an RFID ta
 Unity Project
 - Jacob Yakubisin: Arduino setup and testing
 - Madhav Anugopal: Audio effects and narrative design
+
 Escape Room Team Leads
 - Theming: Carolyn Burback, Alva Huang
 - Pepper's Ghost Puzzle: Tay Padilla
